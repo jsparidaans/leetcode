@@ -1,6 +1,6 @@
 class Solution:
     def hammingWeight(self, n: int) -> int:
-        return len(str(bin(n)).replace("0b", "").replace("0", ""))
+        return bin(n).count("1")
 
 
 # Press the green button in the gutter to run the script.
